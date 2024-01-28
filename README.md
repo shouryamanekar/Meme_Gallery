@@ -11,7 +11,7 @@ This project is a meme gallery built using Next.js that fetches and displays mem
 
 ## Demo
 
-Check out the live demo: [Meme Gallery Demo](https://meme-gallery-orpin.vercel.app/)
+Check out the live demo: [Meme Gallery Demo](https://meme-gallery-shouryamanekar.vercel.app/))
 
 ## How to Run Locally
 
