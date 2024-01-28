@@ -1,6 +1,6 @@
 // components/Gallery.js
 import React from 'react';
-
+import './gallery.css'
 
 const Gallery = ({ memes, onMemeClick }) => {
   return (
@@ -35,53 +35,6 @@ const Gallery = ({ memes, onMemeClick }) => {
         </div>
       </div>
     ))}
-
-
-      {/* Styles */}
-      <style jsx>{`
-        .gallery {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-        }
-
-        .meme-card {
-            height:auto;
-          width: 270px; /* Adjust as needed */
-          margin: 10px;
-          cursor: pointer;
-          border: 1px solid #ddd; /* Border for better visualization */
-          border-radius: 8px;
-          
-          text-align: center;
-          overflow: hidden;
-        }
-
-        img {
-          width: 250px;
-          height: 150px;
-          border: 1px solid #ddd;
-          margin: 10px;
-          object-fit: fit;
-          display : block;
-        }
-
-        video {
-            width: 250px;
-          height: 150px;
-          border: 1px solid #ddd;
-          margin: 10px;
-          padding: 2px;
-          object-fit: fit;
-          display : block;
-          
-          }
-
-        .meme-details {
-          margin: 10px;
-          
-        }
-      `}</style>
     </div>
   );
 };

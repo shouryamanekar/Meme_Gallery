@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Gallery from '../components/Gallery';
+import './index.css'
 
 
 
@@ -141,95 +142,6 @@ const Home = () => {
             </div>
           </div>
         )}
-        
-
-
-  
-        {/* Styles */}
-        <style jsx global>{`
-
-        body {
-            margin: 0;
-        }
-
-
-          .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            margin: 50px;
-          }
-  
-          .app-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #2196F3; /* Blue color, adjust as needed */
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-          }
-  
-          h1 {
-            margin: 0;
-          }
-  
-          .content {
-            width: 100%;
-            max-width: 1000px; /* Adjust as needed */
-            margin: 80px 20px 20px;
-            border: 1px solid #ddd;
-            margin: 20px;
-          }
-  
-          .load-more {
-            text-align: center;
-            margin: 20px 0;
-          }
-  
-          button {
-            background-color: #4CAF50; /* Green color, adjust as needed */
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-          }
-  
-          button:disabled {
-            background-color: #a5a5a5; /* Grey color for disabled state */
-            cursor: not-allowed;
-          }
-
-          .meme-dialog {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-  
-          .dialog-content {
-            background-color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            overflow-y: auto; /* Make the content vertically scrollable if it overflows */
-            max-height: 80vh; /* Set a maximum height for the dialog content */
-          }
-        
-         
-          
-  
-          .details {
-            margin-top: 10px;
-          }
-        `}</style>
       </div>
     );
   };
